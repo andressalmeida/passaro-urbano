@@ -1,0 +1,6 @@
+{
+    "/api": {
+      "target": "https://passaro-urbano-588a2-default-rtdb.firebaseio.com",
+      "secure": false
+    }
+  }
