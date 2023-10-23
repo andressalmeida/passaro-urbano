@@ -1,32 +1,39 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { OrdemCompraService } from '../ordem-compra.service'
+import {NgForm} from '@angular/forms';
+import { Pedido } from '../shared/pedido.model'
 
 @Component({
   selector: 'app-ordem-compra',
   templateUrl: './ordem-compra.component.html',
-  styleUrls: ['./ordem-compra.component.css']
+  styleUrls: ['./ordem-compra.component.css'],
+  providers: [ OrdemCompraService ]
 })
-export class OrdemCompraComponent {
+export class OrdemCompraComponent implements OnInit {
 
-  public endereco: string = ''
-  public numero: string = ''
-  public complemento: string = ''
-  public formaPagamento: string = ''
+  @ViewChild(`formulario`)
+  public form: NgForm | undefined
 
+  public idPedidoCompra: number | undefined
 
-  public atualizaEndereco(endereco: string): void {
-    this.endereco = endereco
+  constructor(private ordemCompraService: OrdemCompraService) { }
+
+  ngOnInit() {
+    
   }
 
-  public atualizaNumero(numero: string): void {
-    this.numero = numero
+  public confirmaCompra(): void {
+  /* let pedido: Pedido = new Pedido(
+      this.form?.value.endereco,
+      this.form?.value.numero,
+      this.form?.value.complemento,
+      this.form?.value.formaPagamento
+    )
+  */
+   this.ordemCompraService.efetivaCompra(this.form?.value)
+   .subscribe((idPedido: number) => {
+    this.idPedidoCompra = idPedido
+   })
+  
   }
-
-  public atualizaComplemento(complemento: string): void {
-    this.complemento = complemento
-  }
-
-  public atualizaFormaPagamento(formaPagamento: string): void {
-    this.formaPagamento = formaPagamento
-  }
-
 }

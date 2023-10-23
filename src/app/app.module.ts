@@ -15,7 +15,9 @@ import {ROUTES} from './app.routes';
 import { OfertaComponent } from './oferta/oferta.component';
 import { OndeFicaComponent } from './oferta/onde-fica/onde-fica.component';
 import { ComoUsarComponent } from './oferta/como-usar/como-usar.component';
-import { OrdemCompraComponent } from './ordem-compra/ordem-compra.component'
+import { OrdemCompraComponent } from './ordem-compra/ordem-compra.component';
+import { OrdemCompraSucessoComponent } from './ordem-compra-sucesso/ordem-compra-sucesso.component'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,12 +30,15 @@ import { OrdemCompraComponent } from './ordem-compra/ordem-compra.component'
     OfertaComponent,
     OndeFicaComponent,
     ComoUsarComponent,
-    OrdemCompraComponent
+    OrdemCompraComponent,
+    OrdemCompraSucessoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [],
