@@ -1,15 +1,7 @@
 <div class="container">
+
   <div class="oferta" *ngIf="oferta.id !== 0">
   
-  <!--
-    <div class="row">
-      <div class="col">
-        <a [routerLink]="['/oferta', 1]">Oferta 1</a>
-        <a [routerLink]="['/oferta', 3]">Oferta 3</a>
-        <a [routerLink]="['/oferta', 6]">Oferta 6</a>
-      </div>
-    </div>
-    -->
 
     <div class="row">
       <div class="col">
@@ -48,6 +40,7 @@
             type="button" 
             class="btn btn-warning btn-lg"
             (click)="adicionarItemCarrinho(oferta)"
+      
             >
               Adicionar ao carrinho
             </button>

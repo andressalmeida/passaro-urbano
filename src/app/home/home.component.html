@@ -7,17 +7,21 @@
 
   <hr />
 
-  <div class="row">
-    <div class="col-sm-4" *ngFor="let oferta of ofertas">
-      <div class="card">
-        <img class="card-img-top" [src]="oferta.imagens[0].url" class="img-fluid">
-        <div class="card-block">
-          <h4 class="card-title">{{oferta.titulo}}</h4>
-          <p class="card-text">{{oferta.descricao_oferta}}</p>
-          <p class="preco">{{oferta.valor | currency : 'BRL'}}</p>
-          <a [routerLink]="['/oferta', oferta.id]" class="btn btn-outline-primary">Ver oferta</a>
-        </div>
+
+<div class="row">
+
+  <div class="col-sm-4" *ngFor="let oferta of ofertas" style="margin-bottom: 20px;">
+
+    <div class="card ">
+      <img class="card-img-top" [src]="oferta.imagens[0].url" class="img-fluid">
+      <div class="card-body">
+        <h4 class="card-title">{{oferta.titulo}}</h4>
+        <p class="card-text">{{oferta.descricao_oferta}}</p>
+        <p class="preco">{{oferta.valor | currency : 'BRL'}}</p>
+        <a [routerLink]="['/oferta', oferta.id]" class="btn btn-outline-primary d-flex justify-content-center">Ver
+          oferta</a>
       </div>
     </div>
 
 </div>
+  </div>

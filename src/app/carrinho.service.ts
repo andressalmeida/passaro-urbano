@@ -1,11 +1,15 @@
 import { Injectable } from '@angular/core';
 import { ItemCarrinho } from './shared/item-carrinho.model';
 import { OfertaI } from './shared/oferta.model';
+import { Router } from '@angular/router';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class CarrinhoService {
+
+  constructor(private router: Router) { }
 
   public itens: ItemCarrinho[] = []
 
@@ -30,6 +34,11 @@ let itemJaExisteNoCarrinho = this.itens.find((item) => item.id === itemCarrinho.
   } else {
     this.itens.push(itemCarrinho)
   }
+
+  alert('Item adicionado ao carrinho.')
+  setTimeout(() => {
+    this.router.navigate(["ordem-compra"]);
+}, 1000);
   }
 
   public totalCarrinho(): number {
@@ -65,8 +74,6 @@ let itemJaExisteNoCarrinho = this.itens.find((item) => item.id === itemCarrinho.
   public limparCarrinho(): void {
     this.itens = []
   }
-
-  constructor() { }
 
   
 }
