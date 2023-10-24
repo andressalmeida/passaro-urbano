@@ -290,6 +290,82 @@
       "complemento": "",
       "formaPagamento": "debito",
       "id": 15
+    },
+    {
+      "endereco": "Rua 5",
+      "numero": "6",
+      "complemento": "",
+      "formaPagamento": "debito",
+      "itens": [
+        {
+          "id": 2,
+          "img": "/assets/ofertas/2/img1.jpg",
+          "titulo": "Cozinha Mexicana",
+          "descricao_oferta": "Almoço ou Jantar com Rodízio Mexicano delicioso.",
+          "valor": 32.9,
+          "quantidade": 2
+        },
+        {
+          "id": 5,
+          "img": "/assets/ofertas/5/img1.jpg",
+          "titulo": "Kart",
+          "descricao_oferta": "Bateria de Kart de 30 minutos.",
+          "valor": 54.9,
+          "quantidade": 1
+        }
+      ],
+      "id": 16
+    },
+    {
+      "endereco": "2ss",
+      "numero": "5",
+      "complemento": "",
+      "formaPagamento": "dinheiro",
+      "itens": [
+        {
+          "id": 2,
+          "img": "/assets/ofertas/2/img1.jpg",
+          "titulo": "Cozinha Mexicana",
+          "descricao_oferta": "Almoço ou Jantar com Rodízio Mexicano delicioso.",
+          "valor": 32.9,
+          "quantidade": 2
+        }
+      ],
+      "id": 17
+    },
+    {
+      "endereco": "teste",
+      "numero": "5",
+      "complemento": "",
+      "formaPagamento": "dinheiro",
+      "itens": [
+        {
+          "id": 1,
+          "img": "/assets/ofertas/1/img1.jpg",
+          "titulo": "Super Burger",
+          "descricao_oferta": "Rodízio de Mini-hambúrger com opção de entrada.",
+          "valor": 29.9,
+          "quantidade": 1
+        }
+      ],
+      "id": 18
+    },
+    {
+      "endereco": "teste teste",
+      "numero": "9",
+      "complemento": "",
+      "formaPagamento": "debito",
+      "itens": [
+        {
+          "id": 2,
+          "img": "/assets/ofertas/2/img1.jpg",
+          "titulo": "Cozinha Mexicana",
+          "descricao_oferta": "Almoço ou Jantar com Rodízio Mexicano delicioso.",
+          "valor": 32.9,
+          "quantidade": 1
+        }
+      ],
+      "id": 19
     }
   ]
 }

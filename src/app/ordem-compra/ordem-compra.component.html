@@ -1,63 +1,39 @@
 <div class="container">
+<div *ngIf="itensCarrinho.length; else carrinhoVazio">
   <div class="ordem-compra" *ngIf="idPedidoCompra === undefined">
     <form novalidate #formulario="ngForm" (ngSubmit)="confirmaCompra()">
     
       <h5>Sua Compra</h5>
       <hr />
 
-      <div class="form-row" style="background: #FAFAFA; padding: 20px; border-bottom: solid 1px #F0F0F0">
+      <div *ngFor="let item of itensCarrinho" class="form-row" style="background: #FAFAFA; padding: 20px; border-bottom: solid 1px #F0F0F0">
         <div class="form-group col-sm-1">
-          <img src="/assets/ofertas/1/img1.jpg" class="img-fluid">
+          <img [src]="item.img" class="img-fluid">
         </div>
         <div class="form-group col-sm-6">
-          Super Burger
+          {{item.titulo}}
           <br />
-          Rodízio de Mini-hambúrger com opção de entrada.
+          {{item.descricao_oferta}}
         </div>
 
         <div>
           <div class="row">
             <div class="col">
-              <button type="button" class="btn btn-link">-</button>
-              1
-              <button type="button" class="btn btn-link">+</button>
+              <button (click)="remover(item)" type="button" class="btn btn-link">-</button>
+              {{item.quantidade}}
+              <button (click)="adicionar(item)" type="button" class="btn btn-link">+</button>
             </div>
           </div>
         </div>
 
         <div class="form-group col-sm-3 d-flex justify-content-end">
-          29.90
-        </div>
-      </div>
-      
-      <div class="form-row" style="background: #FAFAFA; padding: 20px; border-bottom: solid 1px #F0F0F0">
-        <div class="form-group col-sm-1">
-          <img src="/assets/ofertas/4/img1.jpg" class="img-fluid">
-        </div>
-        <div class="form-group col-sm-6">
-          Estância das águas
-          <br />
-          Diversão garantida com piscinas, trilhas e muito mais.
-        </div>
-
-        <div>
-          <div class="row">
-            <div class="col">
-              <button type="button" class="btn btn-link">-</button>
-              1
-              <button type="button" class="btn btn-link">+</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="form-group col-sm-3 d-flex justify-content-end">
-          31.90
+          {{ item.quantidade * item.valor | currency: "BRL"}}
         </div>
       </div>
       
       <div class="form-row">
         <div class="form-group col d-flex justify-content-end">
-          <h4>Total do pedido: 61.80</h4>
+          <h4>Total do pedido: {{retornaTotalCarrinho() | currency: "BRL"}}</h4>
         </div>
       </div>
       <br />
@@ -142,13 +118,37 @@
       <button 
         type="submit" 
         class="btn btn-primary btn-lg"
+        [disabled]="formulario.invalid"
       >
       Cofirmar compra
     </button>
     </form>
+
   </div>
+
+  </div>
+
+  <ng-template #carrinhoVazio >
+    <div 
+    class="form-row d-flex justify-content-center"
+    style="background: #FAFAFA; padding: 90px; border-bottom: solid 1px #F0F0F0">
+      Seu carrinho de compras está vazio!
+    </div>  
+    <hr />
+
+    <div class="d-flex justify-content-center">
+    <button 
+      type="button" 
+      class="btn btn-primary btn-lg"
+      routerLink="/"
+    >
+    Aproveitar ofertas
+  </button>
+    </div>
+  </ng-template>
 
   <div class="ordem-compra" *ngIf="idPedidoCompra !== undefined">
     <app-ordem-compra-sucesso [idPedido]="idPedidoCompra" ></app-ordem-compra-sucesso>
   </div>
+
 </div>

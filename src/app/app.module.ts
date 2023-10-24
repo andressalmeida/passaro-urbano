@@ -18,6 +18,7 @@ import { ComoUsarComponent } from './oferta/como-usar/como-usar.component';
 import { OrdemCompraComponent } from './ordem-compra/ordem-compra.component';
 import { OrdemCompraSucessoComponent } from './ordem-compra-sucesso/ordem-compra-sucesso.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CarrinhoService } from './carrinho.service';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [],
+  providers: [
+    CarrinhoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
