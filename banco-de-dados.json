@@ -10,16 +10,16 @@
       "destaque": true,
       "imagens": [
         {
-          "url": "/assets/ofertas/1/img1.jpg"
+          "url": "./assets/ofertas/1/img1.jpg"
         },
         {
-          "url": "/assets/ofertas/1/img2.jpg"
+          "url": "./assets/ofertas/1/img2.jpg"
         },
         {
-          "url": "/assets/ofertas/1/img3.jpg"
+          "url": "./assets/ofertas/1/img3.jpg"
         },
         {
-          "url": "/assets/ofertas/1/img4.jpg"
+          "url": "./assets/ofertas/1/img4.jpg"
         }
       ]
     },
@@ -33,16 +33,16 @@
       "destaque": true,
       "imagens": [
         {
-          "url": "/assets/ofertas/2/img1.jpg"
+          "url": "./assets/ofertas/2/img1.jpg"
         },
         {
-          "url": "/assets/ofertas/2/img2.jpg"
+          "url": "./assets/ofertas/2/img2.jpg"
         },
         {
-          "url": "/assets/ofertas/2/img3.jpg"
+          "url": "./assets/ofertas/2/img3.jpg"
         },
         {
-          "url": "/assets/ofertas/2/img4.jpg"
+          "url": "./assets/ofertas/2/img4.jpg"
         }
       ]
     },
@@ -56,16 +56,16 @@
       "destaque": false,
       "imagens": [
         {
-          "url": "/assets/ofertas/3/img1.jpg"
+          "url": "./assets/ofertas/3/img1.jpg"
         },
         {
-          "url": "/assets/ofertas/3/img2.jpg"
+          "url": "./assets/ofertas/3/img2.jpg"
         },
         {
-          "url": "/assets/ofertas/3/img3.jpg"
+          "url": "./assets/ofertas/3/img3.jpg"
         },
         {
-          "url": "/assets/ofertas/3/img4.jpg"
+          "url": "./assets/ofertas/3/img4.jpg"
         }
       ]
     },
@@ -79,22 +79,22 @@
       "destaque": true,
       "imagens": [
         {
-          "url": "/assets/ofertas/4/img1.jpg"
+          "url": "./assets/ofertas/4/img1.jpg"
         },
         {
-          "url": "/assets/ofertas/4/img2.jpg"
+          "url": "./assets/ofertas/4/img2.jpg"
         },
         {
-          "url": "/assets/ofertas/4/img3.jpg"
+          "url": "./assets/ofertas/4/img3.jpg"
         },
         {
-          "url": "/assets/ofertas/4/img4.jpg"
+          "url": "./assets/ofertas/4/img4.jpg"
         },
         {
-          "url": "/assets/ofertas/4/img5.jpg"
+          "url": "./assets/ofertas/4/img5.jpg"
         },
         {
-          "url": "/assets/ofertas/4/img6.jpg"
+          "url": "./assets/ofertas/4/img6.jpg"
         }
       ]
     },
@@ -108,10 +108,10 @@
       "destaque": false,
       "imagens": [
         {
-          "url": "/assets/ofertas/5/img1.jpg"
+          "url": "./assets/ofertas/5/img1.jpg"
         },
         {
-          "url": "/assets/ofertas/5/img2.jpg"
+          "url": "./assets/ofertas/5/img2.jpg"
         }
       ]
     },
@@ -125,10 +125,10 @@
       "destaque": false,
       "imagens": [
         {
-          "url": "/assets/ofertas/6/img1.jpg"
+          "url": "./assets/ofertas/6/img1.jpg"
         },
         {
-          "url": "/assets/ofertas/6/img2.jpg"
+          "url": "./assets/ofertas/6/img2.jpg"
         }
       ]
     }
@@ -299,7 +299,7 @@
       "itens": [
         {
           "id": 2,
-          "img": "/assets/ofertas/2/img1.jpg",
+          "img": "./assets/ofertas/2/img1.jpg",
           "titulo": "Cozinha Mexicana",
           "descricao_oferta": "Almoço ou Jantar com Rodízio Mexicano delicioso.",
           "valor": 32.9,
@@ -307,7 +307,7 @@
         },
         {
           "id": 5,
-          "img": "/assets/ofertas/5/img1.jpg",
+          "img": "./assets/ofertas/5/img1.jpg",
           "titulo": "Kart",
           "descricao_oferta": "Bateria de Kart de 30 minutos.",
           "valor": 54.9,
@@ -324,7 +324,7 @@
       "itens": [
         {
           "id": 2,
-          "img": "/assets/ofertas/2/img1.jpg",
+          "img": "./assets/ofertas/2/img1.jpg",
           "titulo": "Cozinha Mexicana",
           "descricao_oferta": "Almoço ou Jantar com Rodízio Mexicano delicioso.",
           "valor": 32.9,
@@ -341,7 +341,7 @@
       "itens": [
         {
           "id": 1,
-          "img": "/assets/ofertas/1/img1.jpg",
+          "img": "./assets/ofertas/1/img1.jpg",
           "titulo": "Super Burger",
           "descricao_oferta": "Rodízio de Mini-hambúrger com opção de entrada.",
           "valor": 29.9,
@@ -358,7 +358,7 @@
       "itens": [
         {
           "id": 2,
-          "img": "/assets/ofertas/2/img1.jpg",
+          "img": "./assets/ofertas/2/img1.jpg",
           "titulo": "Cozinha Mexicana",
           "descricao_oferta": "Almoço ou Jantar com Rodízio Mexicano delicioso.",
           "valor": 32.9,
