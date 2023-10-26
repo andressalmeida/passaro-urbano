@@ -8,7 +8,7 @@ import { Observable, map } from 'rxjs';
 })
 export class OrdemCompraService {
 
-  private url: string = "http://localhost:3000/pedidos"
+  private url: string = "https://api-passaro-urbano.onrender.com/pedidos"
 
   constructor(private http: HttpClient) { }
 

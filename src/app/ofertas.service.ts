@@ -13,7 +13,7 @@ export class OfertasService {
 
   constructor(private http: HttpClient) { }
 
-  private url: string = "http://localhost:3000"
+  private url: string = "https://api-passaro-urbano.onrender.com"
 
 
   public async getOfertas(): Promise<OfertaI[]> {
